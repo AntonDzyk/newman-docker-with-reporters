@@ -21,7 +21,7 @@ jobs:
         env:
           VAR1: ${{ secrets.DOCKER_HUB_USERNAME }}
         run: |
-          echo ${env.VAR1} | base64 -d
+          echo ${{env.VAR1}} | base64 -d
       -
         name: Login to DockerHub
         uses: docker/login-action@v1.12.0
