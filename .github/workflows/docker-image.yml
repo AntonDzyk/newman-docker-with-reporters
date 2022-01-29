@@ -19,7 +19,7 @@ jobs:
       -
         name: debug secrets
         run: |
-          echo ${{secrets.DOCKERHUB }}
+          echo ${{ secrets.SUPER_VAR }}
           echo "PI PI"
       -
         name: Login to DockerHub
