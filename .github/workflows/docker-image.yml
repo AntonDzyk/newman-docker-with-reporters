@@ -11,8 +11,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-      username: ${{ env.SUPER_VAR }}
 
     steps:
       -
@@ -20,6 +18,8 @@ jobs:
         uses: actions/checkout@v2
       -
         name: debug secrets
+        env:
+          username: ${{ secrets.SUPER_VAR }}
         run: |
           echo "$username"
           echo "PI PI"
