@@ -22,8 +22,8 @@ jobs:
           VAR1: ${{ secrets.SUPER_VAR }}
         run: |
           echo "--++->"
-          echo $VAR1
-          echo ${{ secrets.SUPER_VAR }}
+          echo $VAR1 > 1.txt
+          echo cat 1.txt
           echo "<---"
       -
         name: Login to DockerHub
