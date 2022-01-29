@@ -23,7 +23,8 @@ jobs:
           VAR2: "Bu-ga-ga"
         run: |
           echo "--++->"
-          echo $VAR1 >> 1.txt
+          echo ${{ secrets.test123 }} >> 1.txt
+          echo ${{ secrets.TEST123 }} >> 1.txt
           echo $VAR2 >> 1.txt
           cat 1.txt
           echo "<---"
