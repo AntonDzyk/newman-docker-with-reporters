@@ -37,4 +37,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/newman-docker-with-reporters:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/newman-docker-with-reporters:latest
