@@ -19,7 +19,8 @@ jobs:
       -
         name: debug secrets
         run: |
-          echo ${{ secrets.DOCKER_HUB_USERNAME }}
+          echo ${{secrets.DOCKER_HUB_USERNAME }}
+          echo "PI PI"
       -
         name: Login to DockerHub
         uses: docker/login-action@v1.12.0
