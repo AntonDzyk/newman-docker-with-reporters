@@ -19,9 +19,9 @@ jobs:
       -
         name: debug secrets
         env:
-          username: ${{ secrets.SUPER_VAR }}
+          var1: ${{ secrets.SUPER_VAR }}
         run: |
-          echo "$username"
+          echo $var1
           echo "PI PI"
       -
         name: Login to DockerHub
