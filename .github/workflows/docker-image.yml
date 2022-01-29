@@ -22,7 +22,7 @@ jobs:
           VAR1: ${{ secrets.SUPER_VAR }}
         run: |
           echo "--->"
-          echo $VAR1
+          echo ${{env.VAR1}}
           echo "<---"
       -
         name: Login to DockerHub
