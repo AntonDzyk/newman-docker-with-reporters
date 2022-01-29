@@ -21,7 +21,7 @@ jobs:
         env:
           VAR1: ${{ secrets.SUPER_VAR }}
         run: |
-          echo "--->"
+          echo "--++->"
           echo ${{env.VAR1}}
           echo "<---"
       -
