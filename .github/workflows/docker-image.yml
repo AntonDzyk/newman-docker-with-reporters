@@ -12,7 +12,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      username: ${{secrets.DOCKER_HUB_USERNAME}}
+      username: "BLA_BLA"
 
     steps:
       -
