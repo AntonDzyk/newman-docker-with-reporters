@@ -21,8 +21,9 @@ jobs:
         env:
           VAR1: ${{ secrets.SUPER_VAR }}
         run: |
-          echo "$VAR1"
-          echo "PI PI"
+          echo "--->"
+          echo $VAR1
+          echo "<---"
       -
         name: Login to DockerHub
         uses: docker/login-action@v1.12.0
