@@ -19,7 +19,7 @@ jobs:
       -
         name: debug secrets
         run: |
-          echo ${{secrets.DOCKER_HUB_USERNAME }}
+          echo ${{secrets.DOCKERHUB }}
           echo "PI PI"
       -
         name: Login to DockerHub
