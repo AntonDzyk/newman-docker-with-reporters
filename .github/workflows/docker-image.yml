@@ -19,7 +19,7 @@ jobs:
       -
         name: debug secrets
         env:
-          VAR1: ${{ secrets.SUPER_VAR }}
+          VAR1: ${{ secrets.TEST123 }}
           VAR2: "Bu-ga-ga"
         run: |
           echo "--++->"
