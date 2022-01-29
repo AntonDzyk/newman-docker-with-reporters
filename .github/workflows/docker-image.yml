@@ -20,9 +20,11 @@ jobs:
         name: debug secrets
         env:
           VAR1: ${{ secrets.SUPER_VAR }}
+          VAR2: "Bu-ga-ga"
         run: |
           echo "--++->"
-          echo $VAR1 > 1.txt
+          echo $VAR1 >> 1.txt
+          echo $VAR2 >> 1.txt
           echo cat 1.txt
           echo "<---"
       -
