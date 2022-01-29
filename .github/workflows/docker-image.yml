@@ -12,7 +12,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      username: ${{ secrets.SUPER_VAR }}
+      username: ${{ env.SUPER_VAR }}
 
     steps:
       -
