@@ -19,7 +19,7 @@ jobs:
       -
         name: debug
         env:
-          VAR1: ${{ secret.DOCKER_HUB_USERNAME }}
+          VAR1: ${{ secrets.DOCKER_HUB_USERNAME }}
         run: |
           echo "Test variable: ${{env.VAR1}}"
       -
