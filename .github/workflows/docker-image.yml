@@ -17,18 +17,6 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
       -
-        name: debug secrets
-        env:
-          VAR1: ${{ secrets.TEST123 }}
-          VAR2: "Bu-ga-ga"
-        run: |
-          echo "--++->"
-          echo ${{ secrets.test123 }} >> 1.txt
-          echo ${{ secrets.TEST123 }} >> 1.txt
-          echo $VAR2 >> 1.txt
-          cat 1.txt
-          echo "<---"
-      -
         name: Login to DockerHub
         uses: docker/login-action@v1.12.0
         env:
